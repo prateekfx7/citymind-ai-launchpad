@@ -23,7 +23,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-1.5 text-sm text-muted-foreground font-body mb-6"
         >
-          Now with GPT-5 support ✨
+          Now with AI agents support ✨
         </motion.div>
 
         <motion.h1
