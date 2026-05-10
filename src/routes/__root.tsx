@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "citymindai" },
+      { name: "description", content: "Empower citizens with intelligent AI systems that analyze, adapt, and deliver real-time city insights—so communities can experience smarter, safer." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "citymindai" },
+      { property: "og:description", content: "Empower citizens with intelligent AI systems that analyze, adapt, and deliver real-time city insights—so communities can experience smarter, safer." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "citymindai" },
+      { name: "twitter:description", content: "Empower citizens with intelligent AI systems that analyze, adapt, and deliver real-time city insights—so communities can experience smarter, safer." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/gz054cyGQCa2t4pJtVZSIvLObly2/social-images/social-1778423760747-Screenshot_2026-05-10_200357.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/gz054cyGQCa2t4pJtVZSIvLObly2/social-images/social-1778423760747-Screenshot_2026-05-10_200357.webp" },
     ],
     links: [
       {
