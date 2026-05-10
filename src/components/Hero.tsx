@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { DashboardPreview } from "./DashboardPreview";
+import dashboardImg from "@/assets/dashboard-hero.png";
 
 export function Hero() {
   return (
-    <section className="relative flex-1 overflow-hidden">
+    <section id="top" className="relative flex-1 overflow-hidden">
       <video
         autoPlay
         muted
@@ -51,13 +51,13 @@ export function Hero() {
           className="mt-5 flex items-center gap-3"
         >
           <Button className="rounded-full px-6 py-5 text-sm font-medium font-body bg-primary text-primary-foreground hover:bg-primary/90">
-            Book a demo
+            Explore app
           </Button>
           <Button
             variant="ghost"
-            className="h-11 w-11 rounded-full border-0 bg-background shadow-[0_2px_12px_rgba(0,0,0,0.08)] hover:bg-background/80 p-0"
+            className="rounded-full px-5 py-5 text-sm font-medium font-body bg-background shadow-[0_2px_12px_rgba(0,0,0,0.08)] hover:bg-background/80"
           >
-            <Play className="h-4 w-4 fill-foreground text-foreground" />
+            Get started <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
         </motion.div>
 
@@ -77,7 +77,11 @@ export function Hero() {
               WebkitBackdropFilter: "blur(20px)",
             }}
           >
-            <DashboardPreview />
+            <img
+              src={dashboardImg}
+              alt="CityMind AI citizen portal dashboard preview"
+              className="w-full h-auto rounded-xl block"
+            />
           </div>
         </motion.div>
       </div>
