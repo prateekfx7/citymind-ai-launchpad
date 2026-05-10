@@ -1,26 +1,26 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Nexora — The Future of CityMind AI" },
+      {
+        name: "description",
+        content:
+          "Empower citizens with intelligent AI systems that analyze, adapt, and deliver real-time city insights for smarter urban living.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="h-screen flex flex-col bg-background overflow-hidden">
+      <Navbar />
+      <Hero />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
